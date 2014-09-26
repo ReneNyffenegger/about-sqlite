@@ -2,7 +2,7 @@ import sqlite3
 import os.path
 
 
-db_file = 'foreign_key.db'
+db_file = 'foreign-key_pragma.db'
 if os.path.isfile(db_file):
    os.remove(db_file)
 
