@@ -24,8 +24,11 @@ select date('now', 'weekday 0');
 select date('now', 'weekday 1');
 -- 2017-01-23
 
-select date('now', 'unixepoch');
--- 1970-01-29
+select date(0, 'unixepoch');
+-- 1970-01-01
+
+select date(365*24*60*60, 'unixepoch');
+-- 1971-01-01
 
 select date('2016-05-17', '-18 Days');
 -- 2016-04-29
