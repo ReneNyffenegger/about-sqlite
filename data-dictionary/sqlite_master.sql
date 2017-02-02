@@ -46,4 +46,10 @@ select sql from sqlite_master where name = 'foo';
 
   
 
+select name, type from sqlite_master where sql is not null;
+-- 
+-- foo|table
+-- foo_ix|index
+-- foo_v|view
+
 drop table foo;
