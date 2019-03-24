@@ -1,10 +1,9 @@
-with recursive items (lvl, id, txt, items_pos, item_pos) as (
+with recursive items (lvl, id, txt, pos) as (
     select
-       0    as lvl,
+       0     as lvl,
        id,
        txt,
-       pos   as items_pos,
-       0     as item_pos
+       pos   as pos
     from
        item
     where
@@ -14,17 +13,15 @@ with recursive items (lvl, id, txt, items_pos, item_pos) as (
       items.lvl + 1,
       item.id,
       item.txt,
-      items.items_pos,
-      item.pos        as item_pos
+      item.pos
     from
       items    join
       item  on items.id = item.parent
     order by
-      lvl desc,
---    items_pos,
-      item_pos
+      items.lvl+1 desc,
+      item.pos
 )
 select
-  substr('_________________', 1, lvl*2) || txt
+   substr('_________________', 1, lvl*2) || txt
 from
-  items;
+   items;
