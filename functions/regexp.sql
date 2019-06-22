@@ -5,9 +5,8 @@ create table tq84_regexp (
 insert into tq84_regexp values ('foo');
 insert into tq84_regexp values ('twenty-two: 42');
 
--- pcre.so: needed for regexp (Get it on Ubuntu with
---   sudo apt-get install sqlite3-pcre
--- )
+--
+-- pcre.so: needed for regexp--
 --
 .load /usr/lib/sqlite3/pcre.so
 
