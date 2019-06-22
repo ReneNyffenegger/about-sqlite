@@ -10,4 +10,3 @@ select
    replace(data, x'0a', '\n') data_txt
 from
    sqlar;
-
