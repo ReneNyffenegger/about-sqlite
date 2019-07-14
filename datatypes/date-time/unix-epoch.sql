@@ -21,6 +21,6 @@ select
    date_string                                                               ,
    secs_since_1970_01_01                                                     ,
    printf('%x', secs_since_1970_01_01)                               secs_hex,
-   strftime('%Y-%m-%S %H:%M:%S', secs_since_1970_01_01, 'unixepoch') t
+   strftime('%Y-%m-%d %H:%M:%S', secs_since_1970_01_01, 'unixepoch') t
 from
    s;
