@@ -9,12 +9,13 @@ insert into t values (zeroblob(5), x'deadbeef');
 .width 16 16
 .header on
 select
-   quote(c1) c1_hex,
-   quote(c2) c2_hex
+   hex  (c1) c1_hex  ,
+   hex  (c2) c2_hex  ,
+   quote(c1) c1_quote,
+   quote(c2) c2_quote
 from
    t;
 --
--- c1_hex            c2_hex          
--- ----------------  ----------------
--- X'0000000000'     X'DEADBEEF'     
---
+-- c1_hex            c2_hex            c1_quote       c2_quote
+-- ----------------  ----------------  -------------  -----------
+-- 0000000000        DEADBEEF          X'0000000000'  X'DEADBEEF'
