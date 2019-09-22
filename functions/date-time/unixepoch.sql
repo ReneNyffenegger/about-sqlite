@@ -11,15 +11,3 @@ select
                                               7 ,  --  7 second
                              'unixepoch')  calculated;
 ;
-
-
-
-
-
-
-
-
-
-
-
-
