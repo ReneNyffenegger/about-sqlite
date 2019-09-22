@@ -1,5 +1,6 @@
 .mode   column
 .header on
+
 select
    time    (                             'now') "time",
    date    (                             'now') "date",
