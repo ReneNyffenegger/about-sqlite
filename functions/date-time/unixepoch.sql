@@ -11,3 +11,7 @@ select
                                               7 ,  --  7 second
                              'unixepoch')  calculated;
 ;
+--
+-- start_of_unix_epoch  calculated         
+-- -------------------  -------------------
+-- 1970-01-01 00:00:00  2019-01-08 15:32:07
