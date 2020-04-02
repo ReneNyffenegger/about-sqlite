@@ -3,10 +3,6 @@ create table tq84_tab (
   col
 );
 
-.schema sqlite_sequence
---
--- CREATE TABLE sqlite_sequence(name,seq);
-
 insert into tq84_tab (col) values ('foo');
 insert into tq84_tab (col) values ('bar');
 
