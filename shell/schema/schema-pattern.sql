@@ -1,0 +1,11 @@
+.schema %tab_t%
+--
+-- CREATE TABLE tab_two (
+--    v1,
+--    v2
+-- );
+-- CREATE TABLE tab_three (
+--    c1    integer primary key,
+--    c2    text
+-- );
+-- CREATE INDEX ix_tab_two on tab_two(v2);
