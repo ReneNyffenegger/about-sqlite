@@ -19,7 +19,11 @@ commit;
 
 pragma foreign_keys=on;
 -- 
--- Not possible, foreign keys are now enforced:
+-- Not possible, foreign keys are now enforced.
+-- The following statement, if uncommented, causes
+-- error message
+--   Error: near line 27: FOREIGN KEY constraint failed
 --
---     insert into child values (3);
+--   insert into child values (3);
 
+select * from child;
