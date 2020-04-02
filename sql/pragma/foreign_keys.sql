@@ -25,5 +25,3 @@ pragma foreign_keys=on;
 --   Error: near line 27: FOREIGN KEY constraint failed
 --
 --   insert into child values (3);
-
-select * from child;
