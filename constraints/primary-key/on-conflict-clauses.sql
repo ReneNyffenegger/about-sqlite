@@ -115,4 +115,3 @@ select * from tab_on_conflict_rollback;
 --       tab_stage anymore:
 --
 select * from tab_stage;
-
