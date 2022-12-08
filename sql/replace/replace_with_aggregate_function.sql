@@ -1,8 +1,6 @@
 --
 --  Compare with ../update/update_with_aggregate_function.sql
 --
---  See also http://stackoverflow.com/questions/34960972
---
 
 drop table if exists tq84_child;
 drop table if exists tq84_parent;
