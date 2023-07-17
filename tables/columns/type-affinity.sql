@@ -1,5 +1,5 @@
 create table T (
-   def          , -- deault affinity
+   def          , -- default affinity
    txt   text   ,
    int   integer,
    num   numeric,
@@ -15,8 +15,7 @@ with v as (
    select  '5.'   v union all
    select  'text' v union all
    select  '007'  v union all
-   select   null  v union all
-   select  'null' v
+   select   null  v
 )
 insert into T
 select
@@ -38,7 +37,7 @@ select
    typeof(flt) t_flt
 from
    T;
---
+---
 -- def   t_def    t_int    t_num    t_blb    t_flt
 -- ----  -------  -------  -------  -------  -------
 -- 1     integer  integer  integer  integer  real
@@ -49,4 +48,3 @@ from
 -- text  text     text     text     text     text
 -- 007   text     integer  integer  text     real
 --       null     null     null     null     null
--- null  text     text     text     text     text
